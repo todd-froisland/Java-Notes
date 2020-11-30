@@ -1,0 +1,191 @@
+package com.basepackage;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        //byte age = 30;
+        // herAge = age;
+        //long viewsCount = 3_123_456_789l;
+        //float price =10.99F;
+        //remember to add the postfix F for float values
+        //char letter = 'A';
+        //boolean isEligible = false;
+        //reference types
+       // Date now = new Date(); /*need to allocate data for reference types*/
+        //now.getTime();
+        //System.out.println(now);
+        //String message = "   Hello World" + " hola mundo   ";
+        //System.out.println(message.contains(" Wo"));
+        //System.out.println(message.startsWith("Hello"));
+        //System.out.println(message.length());
+        //System.out.println(message.indexOf("e"));
+        //System.out.println(message.replace("o", "*"));
+        //System.out.println(message.toLowerCase());
+        //System.out.println((message.toUpperCase()));
+        //System.out.println(message.trim());
+
+        //arrays
+        //int[] number = new int[5];
+        //int[] numbers = {2,3,5,1,4};
+        //Arrays.sort(numbers);
+        //System.out.println(numbers.length);
+        //System.out.print(Arrays.toString(numbers));
+
+        //multidimensional arrays
+        //int[][] numbers = {{1,2,3},{4,5,6}};
+        //System.out.println(Arrays.deepToString(numbers));
+        //use deepToString to print the values stored in multidimensional arrays
+
+        //constants
+        //final float PI = 3.14F;
+        //final means const
+        //remember to include the F after floating point numbers
+        //use all capital letters to indicate constants
+
+        //arithmetic expressions
+        //double result = (double)10 / (double)3;
+        //System.out.println(result);
+        //use the double preceding the number to type cast to a double so that
+        //division doesn't return just a whole number
+
+        //casting and type conversion
+        //short x = 1;
+        //int y = x + 2;
+        //System.out.println(y);
+        //any values that can be stored in a short variable can also be stored in
+        //an integer variable because int variables contain more bits
+        //Implicit casting = automatic casting
+        //byte > short > int > long > float > double
+        //double ex = 1.1;
+        //int why = (int)ex + 2;
+        //String exe = "1";
+        //int value = Integer.parseInt(exe) + 2; // changes the string to an int value
+        //can be used for Float.parseFloat(exe) if changing to a float value, etc.
+
+        //Math library
+        //Math.round(1.1F);
+        //Math.ceil(1.1F)
+        //Math.min(x,y)
+        //Math.max(x,y)
+        //Math.random() * x gives a random number between 0 and x
+
+        //Formatting numbers
+        //String result = NumberFormat.getPercentInstance().format(0.1);
+        //System.out.println(result);
+        //NumberFormat is a class
+
+        //reading input
+        //Scanner scanner = new Scanner(System.in);
+        //import the Scanner class
+        //create an instance of an input scanner
+        //set it to read System.in so that input can be typed in
+        //possibly you can set this to read your arguments
+        //System.out.print("Age: ");
+
+        //String age = scanner.nextLine().trim();
+        //scanner.nextByte() is a function that will read the next byte
+        //that is input. You can also set it to next line, etc.
+        //System.out.println("You are " + age);
+
+        //MORTGAGE CALCULATOR PROJECT
+        //M = P*(r(1+r)^n/(1+r)^n - 1
+        //P = principal, r = annual interest rate - /100 and /12
+        //n = period in years * # of months
+        //M = mortgage
+
+        //System.out.print("Principal: ");
+        //Scanner scanner = new Scanner(System.in);
+        //int principal = scanner.nextInt();
+        //System.out.print("Annual Interest Rate: ");
+        //double air = scanner.nextDouble();
+        //air = (air / 100) / 12;
+
+        //System.out.print("Period (years): ");
+        //int period = scanner.nextInt();
+        //period = period * 12;
+        //double Mortgage = principal * (air * Math.pow((1+air),period))/(Math.pow((1+air),period) - 1);
+        //System.out.println(NumberFormat.getCurrencyInstance().format(Mortgage));
+
+        //comparison operators
+        //int x = 1;
+        //int y = 1;
+        //System.out.println(x == y);
+        //System.out.println(x != y);
+        //System.out.println(x > y);
+        //System.out.println(x < y);
+
+        //chaining booleans
+        //boolean hasHighIncome = true;
+        //boolean hasGoodCredit = true;
+        //boolean hasCriminalRecord = false;
+        //boolean isEligible = (hasHighIncome || hasGoodCredit) && !hasCriminalRecord;
+        //System.out.println(isEligible);
+        //income = 120_000
+        //boolean hasHighIncome = income > 100_000;
+
+        //if statements
+        //int temp = 19;
+        //if (temp > 30) {
+            //System.out.println("It's a hot day");
+            //System.out.println("drink water");
+        //} else if (temp > 20)
+            //System.out.println("Beautiful day");
+         //else
+            //System.out.println("Cold day");
+
+        //switch statements
+        //String role = "admin";
+        //switch (role) {
+            //case "admin":
+                //System.out.println("You're an admin");
+                //break;
+           // case "moderator":
+                //System.out.println("You're a moderator");
+           // default:
+                //System.out.println("You're a guest");
+        // }
+        //Scanner scanner = new Scanner(System.in);
+        //int value = scanner.nextInt();
+        //if (value % 5 == 0 && value % 3 == 0) {
+        //    System.out.println("FizzBuzz");
+        //}
+       // else if (value % 5 == 0) {
+        //    System.out.println("Fizz");
+        //}
+        //else if (value % 3 == 0) {
+       //     System.out.println("Buzz");
+        //}
+
+        //else {
+            //System.out.println("not divisible by 5 or 3");
+        //}
+
+        //for loops
+        //for (int i = 0; i < 5; i++) {
+        //    System.out.println("Hello world");
+        //}
+
+        //while loops
+        //String input = "";
+       // Scanner scanner = new Scanner(System.in);
+       // while (!input.equals("quit")) {
+            //you can't use a comparison operator to check if a string equals another string
+            //because they compare memory locations. Instead, you have to use .equals()
+           // System.out.print("Input: ");
+           // input = scanner.next().toLowerCase();
+           // if (input.equals("quit")) {
+          //      break;
+            //}
+           // System.out.println(input);
+        //}
+        //for each loops
+        //String[] fruits = {"Apple", "Mango", "Orange"};
+        //for (String fruit : fruits) {
+        //    System.out.println(fruit);
+       // }
+        //no access to the index of each item
+        //can't iterate backwards
+    }
+}
